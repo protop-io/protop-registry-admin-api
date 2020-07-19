@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package io.protop.registry.services.admin;
+
+service OrganizationService {
+  rpc CreateOrganization(CreateOrganizationRequest) returns (CreateOrganizationResponse);
+}
+
+message CreateOrganizationRequest {
+  string name = 1;
+}
+message CreateOrganizationResponse {}
